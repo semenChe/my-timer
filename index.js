@@ -2,8 +2,6 @@ const inputEl = document.querySelector('input');
 const buttonEl = document.querySelector('button');
 const timerEl = document.querySelector('span');
 
-// Напишите реализацию createTimerAnimator
-// который будет анимировать timerEl
 const createTimerAnimator = () => {
   let timerId;
   const addZero = (num) => num > 9 ? num : `0${num}`;
@@ -33,9 +31,6 @@ const createTimerAnimator = () => {
 const animateTimer = createTimerAnimator();
 
 inputEl.addEventListener('input', (event) => {
-  // Очистите input так, чтобы в значении
-  // оставались только числа
-
   inputEl.value = parseInt(event.target.value) || '';
 });
 
